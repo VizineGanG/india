@@ -1,8 +1,4 @@
 .header {
-  background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent to merge with video */
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   text-align: center;
   z-index: 1000;
@@ -16,12 +12,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+  z-index: 999999;
 }
 
 .header__title {
   font-size: var(--fs-600);
   font-weight: var(--fw-900);
-  color: #fff;
+  color: inherit;
   letter-spacing: 2px;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.5);
   transition: color 0.3s ease;
@@ -49,7 +52,7 @@
 .header__li {
   font-size: var(--fs-200);
   font-weight: var(--fw-600);
-  color: #fff;
+  color: inherit;
   position: relative;
   transition: color 0.3s ease;
 }
@@ -61,6 +64,7 @@
   transform: perspective(100px) rotateX(0deg) rotateY(0deg);
   transition: transform 0.3s ease, color 0.3s ease;
   line-height: 1; /* Ensure icon text height is minimal */
+  cursor: pointer;
 }
 
 .header__link:hover {
@@ -103,18 +107,46 @@
   text-decoration: none;
 }
 .typewrite > .wrap {
-  border-right: 0.08em solid #fff; /* Cursor effect */
+  border-right: 0.08em solid inherit; /* Cursor effect */
 }
 
 .header .typewrite {
   font-size: 24px;
-  color: #fff;
+  color: inherit;
   text-align: center;
   margin: 20px 0;
   animation: blink-caret 0.75s step-end infinite;
 }
 
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #fff; }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: inherit;
+  }
+}
+
+.header__dark-mode-btn {
+  width: fit-content;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.header__icon {
+  width: 40px;
+  filter: invert(100%);
+}
+
+.header__fade {
+  padding: 20px;
+  padding-top: 60px;
+  transition: padding 0.3s ease;
+  width: 100%;
+  top: 200px;
+  left: 0;
+  z-index: 1000;
 }

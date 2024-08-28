@@ -7,23 +7,21 @@ import "./index.css"; // Ensure this contains necessary global styles
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/home/Home";
+import Blogs from "./pages/blogs/Blogs";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
   },
+  {
+    path: "/blog",
+    element: <Blogs />,
+  },
 ]);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    {/* Background Video Component */}
-    <div className="background-video-container">
-      <video className="background-video" autoPlay loop muted>
-        <source src="background.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </div>
     <RouterProvider router={router} />
   </StrictMode>
 );
