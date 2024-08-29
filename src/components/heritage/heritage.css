@@ -8,7 +8,6 @@
 .heritage__head-wrapper {
   text-align: center;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent background */
   padding: 1rem;
   border-radius: 8px; /* Adjusted to be less round if needed */
 }

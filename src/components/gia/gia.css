@@ -6,7 +6,7 @@
 .gia__title {
   font-size: var(--fs-200);
   font-weight: var(--fw-700);
-  color: #fff; /* Light text color for contrast */
+  color: inherit; /* Light text color for contrast */
   margin-bottom: 1rem;
   position: relative;
 }
@@ -32,7 +32,7 @@
 .gia__description {
   font-size: var(--fs-200);
   font-weight: var(--fw-400);
-  color: #ddd; /* Slightly lighter text for description */
+  color: inherit; /* Slightly lighter text for description */
   max-width: 60ch;
   margin: 0 auto;
 }
@@ -78,7 +78,12 @@
   color: #fff; /* Light text color for captions */
   font-size: var(--fs-150);
   font-weight: var(--fw-600);
-  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Semi-transparent background for readability */
   padding: 0.5rem;
   border-radius: 8px; /* Rounded corners for caption background */
 }

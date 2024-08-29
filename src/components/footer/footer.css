@@ -4,7 +4,6 @@
   align-items: center;
   position: relative;
   padding: 2rem;
-  background: linear-gradient(135deg, #000000, #000000);
   clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
   overflow: hidden;
 }
@@ -29,10 +28,18 @@
   animation: wave 8s linear infinite;
 }
 
-.wave1 { background-image: url('/path/to/wave1.svg'); }
-.wave2 { background-image: url('/path/to/wave2.svg'); }
-.wave3 { background-image: url('/path/to/wave3.svg'); }
-.wave4 { background-image: url('/path/to/wave4.svg'); }
+.wave1 {
+  background-image: url("/path/to/wave1.svg");
+}
+.wave2 {
+  background-image: url("/path/to/wave2.svg");
+}
+.wave3 {
+  background-image: url("/path/to/wave3.svg");
+}
+.wave4 {
+  background-image: url("/path/to/wave4.svg");
+}
 
 @keyframes wave {
   0% {
@@ -46,7 +53,6 @@
   }
 }
 
-
 .footer__content {
   display: flex;
   gap: 4rem;
@@ -57,11 +63,11 @@
 .footer__title {
   font-size: var(--fs-200);
   font-weight: var(--fw-500);
-  color: #ffffff;
+  color: inherit;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
-.footer__title:hover{
-transform: scale(1.1);
+.footer__title:hover {
+  transform: scale(1.1);
   color: #ff7e5f;
 }
 
@@ -74,7 +80,7 @@ transform: scale(1.1);
 .footer__li {
   font-size: var(--fs-150);
   font-weight: var(--fw-400);
-  color: #ffffff;
+  color: inherit;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
@@ -85,7 +91,7 @@ transform: scale(1.1);
 
 .footer__icon {
   font-size: var(--fs-300);
-  color: #ffffff;
+  color: inherit;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
@@ -97,7 +103,7 @@ transform: scale(1.1);
 .footer__team {
   margin-top: 2rem;
   text-align: center;
-  color: #ffffff;
+  color: inherit;
 }
 
 .footer__team .footer__title {
@@ -112,7 +118,7 @@ transform: scale(1.1);
   display: inline;
   font-size: var(--fs-150); /* Smaller font size for team member names */
   font-weight: var(--fw-400);
-  color: #ffffff;
+  color: inherit;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   margin-top: 0.5rem;
   transition: transform 0.3s ease, color 0.3s ease;
