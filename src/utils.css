@@ -46,6 +46,11 @@
   margin-top: 1rem;
 }
 
+.light-mode {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
 /* Xs */
 @media (min-width: 475px) {
   .container {

@@ -13,6 +13,12 @@ const Home = () => {
   return (
     <>
       <Header />
+      <div className="background-video-container">
+        <video className="background-video" autoPlay loop muted>
+          <source src="background.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
       <video className="hero__video" autoPlay loop muted>
         <source src="path_to_your_video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
@@ -33,7 +39,7 @@ const Home = () => {
         </section>
 
         <section className="map | section-mg-top container">
-         <Map />
+          <Map />
         </section>
 
         <CTA />
